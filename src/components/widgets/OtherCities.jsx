@@ -10,6 +10,11 @@ function OtherCities() {
 
   const cities = [
     {
+      city: "Korea",
+      country: "Busan",
+      geolocation: { lat: "35.1652", lng: "129.043" },
+    },
+    {
       city: "New York",
       country: "United States",
       geolocation: { lat: "40.7128", lng: "-74.0060" },
@@ -28,6 +33,11 @@ function OtherCities() {
       city: "Paris",
       country: "France",
       geolocation: { lat: "48.8566", lng: "2.3522" },
+    },
+    {
+      city: "Singapore",
+      country: "Central Singapore",
+      geolocation: { lat: "1.28333", lng: "103.85" },
     },
   ];
 

@@ -13,7 +13,7 @@ const SunsetSunrise = () => {
   function getLocalTime(timezone, dt, boolean) {
     let utc_time = new Date(dt * 1000);
     let local_time = new Date(utc_time.getTime() + timezone * 1000);
-    let local_time_format = local_time.toLocaleTimeString("en-US", {
+    let local_time_format = local_time.toLocaleTimeString("ko-KR", {
       timeZone: "UTC",
       hour12: boolean,
       hour: "numeric",

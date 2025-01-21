@@ -12,7 +12,7 @@ function CurrentWeatherCard() {
   function convertToDate(timezone, dt) {
     let utc_time = new Date(dt * 1000);
     let local_time = new Date(utc_time.getTime() + timezone * 1000);
-    let local_time_Day = local_time.toLocaleString("en-us", {
+    let local_time_Day = local_time.toLocaleString("ko-KR", {
       timeZone: "UTC",
       weekday: "long",
     });
@@ -20,7 +20,7 @@ function CurrentWeatherCard() {
   }
 
   function convertToHMin(dt) {
-    let time = new Date(dt * 1000).toLocaleTimeString("en-US", {
+    let time = new Date(dt * 1000).toLocaleTimeString("ko-KR", {
       timeZone: "UTC",
       hour12: true,
       hour: "numeric",
@@ -32,7 +32,7 @@ function CurrentWeatherCard() {
   function getLocalTime(timezone, dt) {
     let utc_time = new Date(dt * 1000);
     let local_time = new Date(utc_time.getTime() + timezone * 1000);
-    let local_time_format = local_time.toLocaleTimeString("en-US", {
+    let local_time_format = local_time.toLocaleTimeString("ko-KR", {
       timeZone: "UTC",
       hour12: true,
       hour: "numeric",

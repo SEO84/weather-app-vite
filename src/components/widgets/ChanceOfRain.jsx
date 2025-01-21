@@ -16,7 +16,7 @@ function ChanceOfRain() {
   function convertToHour(dt, timezone) {
     let utc_time = new Date(dt * 1000);
     let local_time = new Date(utc_time.getTime() + timezone * 1000);
-    let local_time_format = local_time.toLocaleTimeString("en-US", {
+    let local_time_format = local_time.toLocaleTimeString("Ko-kr", {
       timeZone: "UTC",
       hour12: true,
       hour: "numeric",

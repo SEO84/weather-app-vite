@@ -11,7 +11,7 @@ function ForecastCard() {
 
   function convertToDate(dt) {
     let utc_time = new Date(dt * 1000);
-    let local_time_Day = utc_time.toLocaleString("en-us", {
+    let local_time_Day = utc_time.toLocaleString("ko-KR", {
       weekday: "short",
     });
     return local_time_Day;

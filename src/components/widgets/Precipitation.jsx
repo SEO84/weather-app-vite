@@ -22,9 +22,9 @@ function Precipitation() {
           {/* CONTENT */}
           <div className="mt-3 h-full">
             <div className="text-2xl font-semibold">
-              {data.rain ? data.rain["3h"] : data.snow ? data.snow["3h"] : 0} mm
+              {data.rain ? data.rain["1h"] : data.snow ? data.snow["1h"] : 0} mm
             </div>
-            <div className="font-semibold">in last 3 hours</div>
+            <div className="font-semibold">in last 1 hours</div>
           </div>
         </div>
       )}
